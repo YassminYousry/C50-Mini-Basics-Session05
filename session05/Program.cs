@@ -36,8 +36,14 @@
             #endregion
 
             #region Q04
-            book.Genre = Genre.Science;
-            Console.WriteLine($"{book.Genre}");  //Science
+            //book.Genre = Genre.Science;
+            //Console.WriteLine($"{book.Genre}");  //Science
+            #endregion
+
+            #region Q05
+            Console.WriteLine($"Fiction = {(int)Genre.Fiction}"); //0
+            Console.WriteLine($"NonFiction = {(int)Genre.NonFiction}"); //1
+            Console.WriteLine($"Science = {(int)Genre.Science}"); //2
             #endregion
         }
     }
