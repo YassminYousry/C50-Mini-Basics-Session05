@@ -4,6 +4,7 @@
     {
         private string password = "secret";
         internal int copiesInStock = 5;
+        public string Title;
     }  
 
     internal class Program
@@ -18,8 +19,13 @@
             #endregion
 
             #region Q02
-            Console.WriteLine(book.copiesInStock); // 5
+            //Console.WriteLine(book.copiesInStock); // 5
             //The internal access modifier allows access from any code within the same project
+            #endregion
+
+            #region Q03
+            book.Title = ".NET";
+            Console.WriteLine($"{book.Title}");  //.NET
             #endregion
         }
     }
