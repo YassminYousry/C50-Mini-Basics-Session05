@@ -1,10 +1,17 @@
 ﻿namespace session05
 {
+    enum Genre
+    {
+        Fiction,
+        NonFiction,
+        Science
+    }
     class Book
     {
         private string password = "secret";
         internal int copiesInStock = 5;
         public string Title;
+        public Genre Genre;
     }  
 
     internal class Program
@@ -24,8 +31,13 @@
             #endregion
 
             #region Q03
-            book.Title = ".NET";
-            Console.WriteLine($"{book.Title}");  //.NET
+            //book.Title = ".NET";
+            //Console.WriteLine($"{book.Title}");  //.NET
+            #endregion
+
+            #region Q04
+            book.Genre = Genre.Science;
+            Console.WriteLine($"{book.Genre}");  //Science
             #endregion
         }
     }
