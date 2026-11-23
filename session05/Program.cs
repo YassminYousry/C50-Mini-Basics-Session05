@@ -47,9 +47,15 @@
             #endregion
 
             #region Q06
-            int genreNumber = 1;
-            Genre genre = (Genre)genreNumber;
-            Console.WriteLine($"{genre}");  //NonFiction
+            //int genreNumber = 1;
+            //Genre genre = (Genre)genreNumber;
+            //Console.WriteLine($"Genre after Casting: {genre}");  //NonFiction
+            #endregion
+
+            #region Q07
+            Genre genre = Genre.Fiction;
+            string genreText = genre.ToString();
+            Console.WriteLine($"Genre after Converting: {genreText}"); //Fiction
             #endregion
         }
     }
