@@ -65,16 +65,16 @@
             #endregion
 
             #region Q09
-            string genreText = "Mystery";
+            //string genreText = "Mystery";
 
-            if (Enum.TryParse<Genre>(genreText, out Genre genre))
-            {
-                Console.WriteLine($"Genre: {genre}");
-            }
-            else
-            {
-                Console.WriteLine("Unknown genre");
-            }
+            //if (Enum.TryParse<Genre>(genreText, out Genre genre))
+            //{
+            //    Console.WriteLine($"Genre: {genre}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Unknown genre");
+            //}
             #endregion
         }
     }
